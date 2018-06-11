@@ -1,0 +1,19 @@
+<div>
+    <h1 class="display-4">Skills</h1>
+</div>
+<hr/>
+<fieldset class="scheduler-border" *ngFor="let skill of skills">
+  <legend class="scheduler-border">{{ skill.sector }}</legend>
+  <div class="row" *ngFor="let skills of skill.skill">
+      <div class="col-md-4 col-sm-4">
+        <h6>{{ skills.name }}</h6>
+      </div>
+      <div class="col-md-8 col-sm-8">  
+        <div class="progress">
+          <div class="progress-bar" role="progressbar"  [style.width.%]="skills.val" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            
+          </div>
+          </div>
+      </div>
+  </div>
+</fieldset>

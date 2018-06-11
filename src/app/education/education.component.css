@@ -1,0 +1,148 @@
+.timeline{
+    background:url(/assets/timeline.png) repeat-y 50% 0;
+}
+.tl-block{
+    width:100%;
+}
+.tl-event{
+    background:url(/assets/timelineCircleMid.png) no-repeat center;
+    position:relative;
+    overflow:hidden;
+    width:100%;
+}
+.tl-event div.year h4{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.tl-event-l{
+    width:45%;
+    float:left;
+    background:url(/assets/arrowright.png) no-repeat right center;
+}
+.tl-event-l div.para{
+    font-family: 'Railway';
+    margin-right: 50px;
+    border-color: #343A40;
+    border-radius: 10px;
+    border-style: solid;
+    padding:10px;
+}
+.tl-event-r{
+    width:45%;
+    float:right;
+    background:url(/assets/arrowleft.png) no-repeat left center;
+}
+.tl-event-r div.para{
+    font-family: 'Railway';
+    margin-left: 50px;
+    border-color: #343A40;
+    border-radius: 10px;
+    border-style: solid;
+    padding:10px;
+}
+
+@media(max-width:780px){
+    .timeline{
+        background:url(/assets/timeline.png) repeat-y 0 0;
+    }
+    .tl-block{
+        margin-bottom:50px;
+        width:100%;
+    }
+    .tl-event{
+        background:url(/assets/timelineCircleMid.png) no-repeat left center;
+        position:relative;
+        overflow:hidden;
+        width:100%;
+    }
+    .tl-event div.year h4{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        right: 55%;
+        margin-right: -100%;
+        transform: translate(-50%, -50%)
+    }
+    .tl-event-l{
+        width:85%;
+        float:right;
+        background:url(/assets/arrowleft.png) no-repeat left center;
+        resize: both;
+    }
+    .tl-event-l div.para{
+        font-family: 'Railway';
+        width:87%;
+        margin-left: 50px;
+        border-color: #343A40;
+        border-radius: 10px;
+        border-style: solid;
+        padding:10px;
+    }
+    .tl-event-r{
+        width:85%;
+        float:right;
+        background:url(/assets/arrowleft.png) no-repeat left center;
+        resize: both;
+    }
+    .tl-event-r div.para{
+        font-family: 'Railway';
+        margin-left: 50px;
+        border-color: #343A40;
+        border-radius: 10px;
+        border-style: solid;
+        padding:10px;
+    }
+} 
+    @media(max-width:480px){
+        .timeline{
+            background:url(/assets/timeline.png) repeat-y 0 0;
+        }
+        .tl-block{
+            margin-bottom:50px;
+            width:100%;
+        }
+        .tl-event{
+            background:url(/assets/timelineCircle.png) no-repeat left center;
+            position:relative;
+            overflow:hidden;
+            width:100%;
+        }
+        .tl-event div.year h4{
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            right: 55%;
+            margin-right: -100%;
+            transform: translate(-50%, -50%);
+        }
+        .tl-event-l{
+            width:85%;
+            float:right;
+            background:transparent no-repeat left center;
+        }
+        .tl-event-l div.para{
+            font-family: 'Railway';
+            margin-left: 20px;
+            border-color: #343A40;
+            border-radius: 10px;
+            border-style: solid;
+            padding:10px;
+        }  
+        .tl-event-r{
+            width:85%;
+            float:right;
+            background:transparent no-repeat left center;
+        }
+        .tl-event-r div.para{
+            font-family: 'Railway';
+            margin-left: 20px;
+            border-color: #343A40;
+            border-radius: 10px;
+            border-style: solid;
+            padding:10px;
+        }     
+}

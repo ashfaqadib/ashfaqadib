@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
+
+p{
+    font-family: 'Railway';
+}
+h1{
+    font-family: 'Railway';
+}
+body{
+    font-family: 'Railway';
+}
